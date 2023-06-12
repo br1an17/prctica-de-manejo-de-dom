@@ -11,7 +11,7 @@ const createTask = (evento) => {
   const task = document.createElement('li');
   task.classList.add('card');
   input.value = '';
-  //backticks
+
   const taskContent = document.createElement('div');
 
   const titleTask = document.createElement('span');
@@ -19,12 +19,12 @@ const createTask = (evento) => {
   titleTask.innerText = value;
   taskContent.appendChild(checkComplete());
   taskContent.appendChild(titleTask);
-  // task.innerHTML = content;
+
 
   task.appendChild(taskContent);
   task.appendChild(deleteIcon());
   list.appendChild(task);
 };
 
-//Arrow functions o funciones anonimas
+
 btn.addEventListener('click', createTask);
